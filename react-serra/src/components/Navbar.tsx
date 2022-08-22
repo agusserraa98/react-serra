@@ -13,6 +13,7 @@ export const Navbar = () => {
     <AppBar position="static">
       <Toolbar>
         <IconButton size="large" edge="start" color="inherit" aria-label="logo">
+        <AnchorIcon></AnchorIcon>
         </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           El Ancla store
