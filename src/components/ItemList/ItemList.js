@@ -2,6 +2,7 @@
 const ItemList = ({ productos = [] }) => {
   productos.map((prod) => console.log(prod.id));
 
+
   return (
     <div>
       <h2>Productos</h2>
@@ -19,4 +20,4 @@ const ItemList = ({ productos = [] }) => {
     </div>
   );
 };
-export default ItemList;
+export default ItemList

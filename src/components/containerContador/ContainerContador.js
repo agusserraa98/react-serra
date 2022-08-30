@@ -1,16 +1,20 @@
 import React from "react";
 import { useState } from "react";
-import "./ContainerContador.css"
+import "./ContainerContador.css";
 const ContainerContador = () => {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(1);
 
   const handleSuma = () => {
-    setCount((prevCount) => prevCount + 1);
-    console.log(count);
+    if (count < 15 ) {
+      setCount((prevCount) => prevCount + 1);
+      console.log(count);
+    }
   };
   //FUNCION RESTA
   const handleResta = () => {
-    setCount((prevCount) => prevCount - 1);
+    if (count > 1) {
+      setCount((prevCount) => prevCount - 1);
+    }
   };
 
   let date = Date();
@@ -20,8 +24,8 @@ const ContainerContador = () => {
       <h2 className="container_hora">{date}</h2>
       <h1>{count}</h1>
       <div className="container_btns">
-        <button onClick={handleSuma}>boton 1</button>
-        <button onClick={handleResta}>boton 2</button>
+        <button onClick={handleSuma}>SUMAR</button>
+        <button onClick={handleResta}>RESTAR</button>
       </div>
     </div>
   );
