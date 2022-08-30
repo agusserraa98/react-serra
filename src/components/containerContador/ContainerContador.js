@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import "./ContainerContador.css"
 const ContainerContador = () => {
   const [count, setCount] = useState(5);
 

@@ -1,4 +1,3 @@
-import { PrintDisabled } from "@material-ui/icons";
 
 const ItemList = ({ productos = [] }) => {
   productos.map((prod) => console.log(prod.id));
